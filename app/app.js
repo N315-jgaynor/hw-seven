@@ -587,11 +587,11 @@ function loadLists() {
     listString += `<li id="${idx}" onclick="loadListItems(${idx})">${list.name} <span class="right"> Items: ${list.listItems.length}</span></li>`;
   });
   listString += "</ul>";
-  $("#app").html(listString);
+  $(".events-container").html(listString);
 }
 
 // function initListeners() {}
 
-// $(document).ready(function () {
-//   initListeners();
-// });
+$(document).ready(function () {
+  loadLists();
+});
