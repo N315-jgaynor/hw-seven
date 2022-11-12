@@ -1,42 +1,533 @@
 var LISTS = [
   {
-    name: "Groceries",
+    name: "Sub-Juniors Powerlifting Meet",
     listItems: [
       {
-        name: "milk",
-        checked: false,
-        category: "dairy",
-      },
-      {
-        name: "cheese",
-        checked: false,
-        category: "dairy",
-      },
-      {
-        name: "oranges",
-        checked: false,
-        category: "fruits",
-      },
-    ],
-  },
-
-  {
-    name: "Camping",
-    listItems: [
-      {
-        name: "tent",
+        name: "Simo Kozieł",
         checked: false,
         category: "",
       },
       {
-        name: "chairs",
+        name: "Vitaly Piątek",
         checked: false,
-        category: "sporting goods",
+        category: "",
       },
       {
-        name: "bug spray",
+        name: "Sampath Valerio",
         checked: false,
-        category: "repellents",
+        category: "",
+      },
+      {
+        name: "Pramod Rudaski",
+        checked: false,
+        category: "",
+      },
+      {
+        name: "Arya Coello",
+        checked: false,
+        category: "",
+      },
+      {
+        name: "Kiran Ó Seighin",
+        checked: false,
+        category: "",
+      },
+      {
+        name: "Gabriel Serra",
+        checked: false,
+        category: "",
+      },
+      {
+        name: "Torin Schüttmann",
+        checked: false,
+        category: "",
+      },
+      {
+        name: "Jay Patterson",
+        checked: false,
+        category: "",
+      },
+      {
+        name: "Nat Salminen",
+        checked: false,
+        category: "",
+      },
+    ],
+    name: "2022 Bench Blast",
+    listItems: [
+      {
+        name: "Simo Kozieł",
+        checked: false,
+        category: "",
+      },
+      {
+        name: "Vitaly Piątek",
+        checked: false,
+        category: "",
+      },
+      {
+        name: "Sampath Valerio",
+        checked: false,
+        category: "",
+      },
+      {
+        name: "Pramod Rudaski",
+        checked: false,
+        category: "",
+      },
+      {
+        name: "Arya Coello",
+        checked: false,
+        category: "",
+      },
+      {
+        name: "Kiran Ó Seighin",
+        checked: false,
+        category: "",
+      },
+      {
+        name: "Gabriel Serra",
+        checked: false,
+        category: "",
+      },
+      {
+        name: "Torin Schüttmann",
+        checked: false,
+        category: "",
+      },
+      {
+        name: "Jay Patterson",
+        checked: false,
+        category: "",
+      },
+      {
+        name: "Nat Salminen",
+        checked: false,
+        category: "",
+      },
+    ],
+    name: "Elk Mound Lift-a-Thon",
+    listItems: [
+      {
+        name: "Simo Kozieł",
+        checked: false,
+        category: "",
+      },
+      {
+        name: "Vitaly Piątek",
+        checked: false,
+        category: "",
+      },
+      {
+        name: "Sampath Valerio",
+        checked: false,
+        category: "",
+      },
+      {
+        name: "Pramod Rudaski",
+        checked: false,
+        category: "",
+      },
+      {
+        name: "Arya Coello",
+        checked: false,
+        category: "",
+      },
+      {
+        name: "Kiran Ó Seighin",
+        checked: false,
+        category: "",
+      },
+      {
+        name: "Gabriel Serra",
+        checked: false,
+        category: "",
+      },
+      {
+        name: "Torin Schüttmann",
+        checked: false,
+        category: "",
+      },
+      {
+        name: "Jay Patterson",
+        checked: false,
+        category: "",
+      },
+      {
+        name: "Nat Salminen",
+        checked: false,
+        category: "",
+      },
+    ],
+    name: "OPA Provincials Saturday Day 2 Session 1",
+    listItems: [
+      {
+        name: "Simo Kozieł",
+        checked: false,
+        category: "",
+      },
+      {
+        name: "Vitaly Piątek",
+        checked: false,
+        category: "",
+      },
+      {
+        name: "Sampath Valerio",
+        checked: false,
+        category: "",
+      },
+      {
+        name: "Pramod Rudaski",
+        checked: false,
+        category: "",
+      },
+      {
+        name: "Arya Coello",
+        checked: false,
+        category: "",
+      },
+      {
+        name: "Kiran Ó Seighin",
+        checked: false,
+        category: "",
+      },
+      {
+        name: "Gabriel Serra",
+        checked: false,
+        category: "",
+      },
+      {
+        name: "Torin Schüttmann",
+        checked: false,
+        category: "",
+      },
+      {
+        name: "Jay Patterson",
+        checked: false,
+        category: "",
+      },
+      {
+        name: "Nat Salminen",
+        checked: false,
+        category: "",
+      },
+    ],
+    name: "Ironsides Fall 2022",
+    listItems: [
+      {
+        name: "Simo Kozieł",
+        checked: false,
+        category: "",
+      },
+      {
+        name: "Vitaly Piątek",
+        checked: false,
+        category: "",
+      },
+      {
+        name: "Sampath Valerio",
+        checked: false,
+        category: "",
+      },
+      {
+        name: "Pramod Rudaski",
+        checked: false,
+        category: "",
+      },
+      {
+        name: "Arya Coello",
+        checked: false,
+        category: "",
+      },
+      {
+        name: "Kiran Ó Seighin",
+        checked: false,
+        category: "",
+      },
+      {
+        name: "Gabriel Serra",
+        checked: false,
+        category: "",
+      },
+      {
+        name: "Torin Schüttmann",
+        checked: false,
+        category: "",
+      },
+      {
+        name: "Jay Patterson",
+        checked: false,
+        category: "",
+      },
+      {
+        name: "Nat Salminen",
+        checked: false,
+        category: "",
+      },
+    ],
+    name: "BBB Unite Womens Comp",
+    listItems: [
+      {
+        name: "Simo Kozieł",
+        checked: false,
+        category: "",
+      },
+      {
+        name: "Vitaly Piątek",
+        checked: false,
+        category: "",
+      },
+      {
+        name: "Sampath Valerio",
+        checked: false,
+        category: "",
+      },
+      {
+        name: "Pramod Rudaski",
+        checked: false,
+        category: "",
+      },
+      {
+        name: "Arya Coello",
+        checked: false,
+        category: "",
+      },
+      {
+        name: "Kiran Ó Seighin",
+        checked: false,
+        category: "",
+      },
+      {
+        name: "Gabriel Serra",
+        checked: false,
+        category: "",
+      },
+      {
+        name: "Torin Schüttmann",
+        checked: false,
+        category: "",
+      },
+      {
+        name: "Jay Patterson",
+        checked: false,
+        category: "",
+      },
+      {
+        name: "Nat Salminen",
+        checked: false,
+        category: "",
+      },
+    ],
+    name: "USA Powerlifting San Diego Validus Open V",
+    listItems: [
+      {
+        name: "Simo Kozieł",
+        checked: false,
+        category: "",
+      },
+      {
+        name: "Vitaly Piątek",
+        checked: false,
+        category: "",
+      },
+      {
+        name: "Sampath Valerio",
+        checked: false,
+        category: "",
+      },
+      {
+        name: "Pramod Rudaski",
+        checked: false,
+        category: "",
+      },
+      {
+        name: "Arya Coello",
+        checked: false,
+        category: "",
+      },
+      {
+        name: "Kiran Ó Seighin",
+        checked: false,
+        category: "",
+      },
+      {
+        name: "Gabriel Serra",
+        checked: false,
+        category: "",
+      },
+      {
+        name: "Torin Schüttmann",
+        checked: false,
+        category: "",
+      },
+      {
+        name: "Jay Patterson",
+        checked: false,
+        category: "",
+      },
+      {
+        name: "Nat Salminen",
+        checked: false,
+        category: "",
+      },
+    ],
+    name: "USA Powerlifting Gainsgiving Open",
+    listItems: [
+      {
+        name: "Simo Kozieł",
+        checked: false,
+        category: "",
+      },
+      {
+        name: "Vitaly Piątek",
+        checked: false,
+        category: "",
+      },
+      {
+        name: "Sampath Valerio",
+        checked: false,
+        category: "",
+      },
+      {
+        name: "Pramod Rudaski",
+        checked: false,
+        category: "",
+      },
+      {
+        name: "Arya Coello",
+        checked: false,
+        category: "",
+      },
+      {
+        name: "Kiran Ó Seighin",
+        checked: false,
+        category: "",
+      },
+      {
+        name: "Gabriel Serra",
+        checked: false,
+        category: "",
+      },
+      {
+        name: "Torin Schüttmann",
+        checked: false,
+        category: "",
+      },
+      {
+        name: "Jay Patterson",
+        checked: false,
+        category: "",
+      },
+      {
+        name: "Nat Salminen",
+        checked: false,
+        category: "",
+      },
+    ],
+    name: "USA Powerlifting Coastal Clash",
+    listItems: [
+      {
+        name: "Simo Kozieł",
+        checked: false,
+        category: "",
+      },
+      {
+        name: "Vitaly Piątek",
+        checked: false,
+        category: "",
+      },
+      {
+        name: "Sampath Valerio",
+        checked: false,
+        category: "",
+      },
+      {
+        name: "Pramod Rudaski",
+        checked: false,
+        category: "",
+      },
+      {
+        name: "Arya Coello",
+        checked: false,
+        category: "",
+      },
+      {
+        name: "Kiran Ó Seighin",
+        checked: false,
+        category: "",
+      },
+      {
+        name: "Gabriel Serra",
+        checked: false,
+        category: "",
+      },
+      {
+        name: "Torin Schüttmann",
+        checked: false,
+        category: "",
+      },
+      {
+        name: "Jay Patterson",
+        checked: false,
+        category: "",
+      },
+      {
+        name: "Nat Salminen",
+        checked: false,
+        category: "",
+      },
+    ],
+    name: "4th Annual Spartan Showdown",
+    listItems: [
+      {
+        name: "Simo Kozieł",
+        checked: false,
+        category: "",
+      },
+      {
+        name: "Vitaly Piątek",
+        checked: false,
+        category: "",
+      },
+      {
+        name: "Sampath Valerio",
+        checked: false,
+        category: "",
+      },
+      {
+        name: "Pramod Rudaski",
+        checked: false,
+        category: "",
+      },
+      {
+        name: "Arya Coello",
+        checked: false,
+        category: "",
+      },
+      {
+        name: "Kiran Ó Seighin",
+        checked: false,
+        category: "",
+      },
+      {
+        name: "Gabriel Serra",
+        checked: false,
+        category: "",
+      },
+      {
+        name: "Torin Schüttmann",
+        checked: false,
+        category: "",
+      },
+      {
+        name: "Jay Patterson",
+        checked: false,
+        category: "",
+      },
+      {
+        name: "Nat Salminen",
+        checked: false,
+        category: "",
       },
     ],
   },

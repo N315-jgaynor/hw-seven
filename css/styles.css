@@ -19,6 +19,98 @@ p {
   margin-bottom: 16px;
 }
 
+#app {
+  background-color: #000;
+  margin-top: 132px;
+}
+
+.navHolder {
+  height: 132px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: -132px;
+  background-color: #000;
+}
+.navHolder .nav-logo {
+  margin-left: 20px;
+  width: 130px;
+  height: 100px;
+  background-image: url(../images/camping-logo.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.navHolder .nav-links {
+  margin: auto 50px auto auto;
+}
+.navHolder .nav-links a {
+  font-family: Roboto;
+  font-size: 25px;
+  margin-left: 20px;
+  text-decoration: none;
+  color: #fff;
+}
+.navHolder .nav-bars {
+  display: none;
+  flex-direction: column;
+  margin-right: 37px;
+}
+.navHolder .nav-bars .nav-bar {
+  display: block;
+  width: 25px;
+  margin: 3px 0;
+  height: 3px;
+  background-color: #fff;
+  border-radius: 3px;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-bars.active .nav-bar:nth-child(2) {
+  opacity: 0;
+}
+.nav-bars.active .nav-bar:nth-child(1) {
+  transform: translateY(9px) rotate(45deg);
+}
+.nav-bars.active .nav-bar:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+@media screen and (max-width: 1330px) {
+  .navHolder .nav-logo {
+    margin-left: 20px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .navHolder {
+    position: fixed;
+    z-index: 10;
+  }
+  .navHolder .nav-links {
+    position: fixed;
+    width: 100vw;
+    opacity: 0;
+    right: 1000px;
+    top: 100px;
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.3s ease-in;
+    margin: 0 auto;
+  }
+  .navHolder .nav-links a {
+    margin: 30px auto;
+  }
+  .navHolder .nav-links.active {
+    opacity: 1;
+    right: 0;
+    left: 0;
+  }
+  .navHolder .nav-bars {
+    display: flex;
+  }
+}
 li {
   cursor: pointer;
   list-style-type: none;
