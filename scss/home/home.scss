@@ -1,0 +1,33 @@
+li {
+  cursor: pointer;
+  list-style-type: none;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  background-color: bisque;
+  position: relative;
+}
+
+li:nth-child(odd) {
+  background-color: beige;
+}
+
+li input {
+  margin: 0 20px;
+}
+
+li.strike {
+  text-decoration: line-through;
+}
+
+.right {
+  position: absolute;
+  right: 15px;
+}
+
+.delete {
+  cursor: pointer;
+  position: absolute;
+  right: 20px;
+}
