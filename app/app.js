@@ -587,7 +587,7 @@ function deleteItem(listIndex, idx) {
 }
 
 function loadListItems(listIndex) {
-  let listString = `<button onclick="loadLists()">Back</button><ul>`;
+  let listString = `<div class="events-container"><h1></h1>`;
   $.each(LISTS[listIndex].listItems, function (idx, listItem) {
     listString += `<li id="${idx}" class="${
       listItem.checked ? "strike" : ""
@@ -600,16 +600,25 @@ function loadListItems(listIndex) {
     <span class="delete" onclick="deleteItem(${listIndex}, ${idx})">Delete</span>
     </li>`;
   });
-  listString += `</ul>
+  listString += `
     <div class="addItemInput">
     <input id="addItem" type="text">
-    <button onclick="addItem(${listIndex})">Add Item</button>
+    <button onclick="addItem(${listIndex})">Add Competitor</button>
+    </div>
+    <button onclick="reloadLists()">Back</button>
     </div>`;
-  $("#app").html(listString);
+  $(".home-content").html(listString);
+}
+
+function reloadLists() {
+  $("#app").html(`<div class="home">
+  <div class="home-content"></div>
+</div>`);
+  loadLists();
 }
 
 function loadLists() {
-  let listString = `<div class="events-container">`;
+  let listString = `<div class="events-container"><h1>Upcoming Events</h1>`;
   $.each(LISTS, function (idx, list) {
     listString += `<li id="${idx}" onclick="loadListItems(${idx})"><p>${list.name}</p><span class="right"> Competitors: ${list.listItems.length}</span></li>`;
   });

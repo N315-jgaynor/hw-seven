@@ -20,7 +20,7 @@ p {
 }
 
 #app {
-  background-color: #000;
+  background-color: #555;
   margin-top: 132px;
 }
 
@@ -137,12 +137,11 @@ p {
   margin: 50px auto;
   font-size: 40px;
 }
-
-.events-container {
+.home .events-container {
   margin: 0 auto;
   width: 700px;
 }
-.events-container li {
+.home .events-container li {
   color: white;
   cursor: pointer;
   border: 2px solid #fff;
@@ -153,16 +152,30 @@ p {
   display: flex;
   position: relative;
 }
-.events-container li p {
+.home .events-container li p {
   margin: auto 0 auto 15px;
 }
-.events-container .right {
+.home .events-container .addItemInput {
+  width: 700px;
+  margin-top: 5px;
+  border: 2px solid #fff;
+  display: flex;
+  height: 30px;
+}
+.home .events-container .addItemInput input {
+  width: 100%;
+  background-color: none;
+}
+.home .events-container .addItemInput button {
+  width: 150px;
+  font-family: Roboto;
+}
+.home .events-container .right {
   position: absolute;
   right: 15px;
   margin-top: 5px;
 }
-
-li:nth-child(even) {
+.home .events-container li:nth-child(even) {
   background-color: #444;
 }
 
