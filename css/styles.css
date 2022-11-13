@@ -22,11 +22,6 @@ p {
 #app {
   background-color: #000;
   margin-top: 132px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  height: 100vh;
 }
 
 @font-face {
@@ -132,56 +127,43 @@ p {
     display: flex;
   }
 }
+.home {
+  height: 100vh;
+}
 .home h1 {
   color: white;
+  font-family: Roboto-Bold;
+  text-align: center;
+  margin: 50px auto;
+  font-size: 40px;
 }
-.home .events-container ul li {
-  cursor: pointer;
-  list-style-type: none;
-  height: 50px;
-  display: flex;
-  align-items: center;
-  padding-left: 20px;
-  background-color: bisque;
-  position: relative;
-  width: 500px;
-  margin-top: 100px;
+
+.events-container {
+  margin: 0 auto;
+  width: 700px;
+}
+.events-container li {
   color: white;
+  cursor: pointer;
+  border: 2px solid #fff;
+  margin-top: 5px;
+  list-style-type: none;
+  font-family: Roboto;
+  height: 30px;
+  display: flex;
+  position: relative;
 }
-.home .events-container ul li input {
-  margin: 0 20px;
-  background-color: #fff;
+.events-container li p {
+  margin: auto 0 auto 15px;
 }
-.home .events-container .right {
+.events-container .right {
   position: absolute;
   right: 15px;
-}
-.home .events-container .delete {
-  cursor: pointer;
-  position: absolute;
-  right: 20px;
-  color: white;
+  margin-top: 5px;
 }
 
-li {
-  cursor: pointer;
-  list-style-type: none;
-  height: 50px;
-  display: flex;
-  align-items: center;
-  padding-left: 20px;
-  background-color: bisque;
-  position: relative;
-  width: 500px;
-  color: white;
-}
-li input {
-  margin: 0 20px;
-  background-color: #fff;
-}
-
-li:nth-child(odd) {
-  background-color: beige;
+li:nth-child(even) {
+  background-color: #444;
 }
 
 li.strike {

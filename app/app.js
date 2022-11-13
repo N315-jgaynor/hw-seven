@@ -53,6 +53,9 @@ var LISTS = [
         category: "",
       },
     ],
+  },
+
+  {
     name: "2022 Bench Blast",
     listItems: [
       {
@@ -106,6 +109,9 @@ var LISTS = [
         category: "",
       },
     ],
+  },
+
+  {
     name: "Elk Mound Lift-a-Thon",
     listItems: [
       {
@@ -159,6 +165,9 @@ var LISTS = [
         category: "",
       },
     ],
+  },
+
+  {
     name: "OPA Provincials Saturday Day 2 Session 1",
     listItems: [
       {
@@ -212,6 +221,9 @@ var LISTS = [
         category: "",
       },
     ],
+  },
+
+  {
     name: "Ironsides Fall 2022",
     listItems: [
       {
@@ -265,6 +277,9 @@ var LISTS = [
         category: "",
       },
     ],
+  },
+
+  {
     name: "BBB Unite Womens Comp",
     listItems: [
       {
@@ -318,6 +333,9 @@ var LISTS = [
         category: "",
       },
     ],
+  },
+
+  {
     name: "USA Powerlifting San Diego Validus Open V",
     listItems: [
       {
@@ -371,6 +389,9 @@ var LISTS = [
         category: "",
       },
     ],
+  },
+
+  {
     name: "USA Powerlifting Gainsgiving Open",
     listItems: [
       {
@@ -424,6 +445,9 @@ var LISTS = [
         category: "",
       },
     ],
+  },
+
+  {
     name: "USA Powerlifting Coastal Clash",
     listItems: [
       {
@@ -477,6 +501,9 @@ var LISTS = [
         category: "",
       },
     ],
+  },
+
+  {
     name: "4th Annual Spartan Showdown",
     listItems: [
       {
@@ -582,15 +609,13 @@ function loadListItems(listIndex) {
 }
 
 function loadLists() {
-  let listString = "<ul>";
+  let listString = `<div class="events-container">`;
   $.each(LISTS, function (idx, list) {
-    listString += `<li id="${idx}" onclick="loadListItems(${idx})">${list.name} <span class="right"> Items: ${list.listItems.length}</span></li>`;
+    listString += `<li id="${idx}" onclick="loadListItems(${idx})"><p>${list.name}</p><span class="right"> Competitors: ${list.listItems.length}</span></li>`;
   });
-  listString += "</ul>";
-  $(".events-container").html(listString);
+  listString += "</div>";
+  $(".home-content").html(listString);
 }
-
-// function initListeners() {}
 
 $(document).ready(function () {
   loadLists();

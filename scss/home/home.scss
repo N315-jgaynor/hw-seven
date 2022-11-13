@@ -1,66 +1,92 @@
 .home {
+  height: 100vh;
   h1 {
     color: white;
-  }
-
-  .events-container {
-    ul {
-      li {
-        cursor: pointer;
-        list-style-type: none;
-        height: 50px;
-        display: flex;
-        align-items: center;
-        padding-left: 20px;
-        background-color: bisque;
-        position: relative;
-        width: 500px;
-        margin-top: 100px;
-        color: white;
-
-        input {
-          margin: 0 20px;
-          background-color: #fff;
-        }
-      }
-    }
-
-    .right {
-      position: absolute;
-      right: 15px;
-    }
-
-    .delete {
-      cursor: pointer;
-      position: absolute;
-      right: 20px;
-      color: white;
-    }
+    font-family: Roboto-Bold;
+    text-align: center;
+    margin: 50px auto;
+    font-size: 40px;
   }
 }
 
-li {
-  cursor: pointer;
-  list-style-type: none;
-  height: 50px;
-  display: flex;
-  align-items: center;
-  padding-left: 20px;
-  background-color: bisque;
-  position: relative;
-  width: 500px;
-  color: white;
+.events-container {
+  margin: 0 auto;
+  width: 700px;
 
-  input {
-    margin: 0 20px;
-    background-color: #fff;
+  li {
+    color: white;
+    cursor: pointer;
+    border: 2px solid #fff;
+    margin-top: 5px;
+    list-style-type: none;
+    font-family: Roboto;
+    height: 30px;
+    display: flex;
+    position: relative;
+
+    p {
+      margin: auto 0 auto 15px;
+    }
+  }
+
+  .right {
+    position: absolute;
+    right: 15px;
+    margin-top: 5px;
   }
 }
 
-li:nth-child(odd) {
-  background-color: beige;
+li:nth-child(even) {
+  background-color: #444;
 }
 
 li.strike {
   text-decoration: line-through;
 }
+
+// .home {
+//   h1 {
+//     color: white;
+//   }
+
+//   .events-container {
+//     li {
+//       background-color: blue;
+//       color: white;
+//       // cursor: pointer;
+//       // list-style-type: none;
+//       // height: 50px;
+//       // display: flex;
+//       // align-items: center;
+//       // padding-left: 20px;
+//       // background-color: bisque;
+//       // position: relative;
+//       // width: 500px;
+//       // margin-top: 100px;
+//       // color: white;
+
+//       input {
+//         margin: 0 20px;
+//         background-color: #fff;
+//       }
+//     }
+
+//     .right {
+//       position: absolute;
+//       right: 15px;
+//     }
+
+//     .delete {
+//       cursor: pointer;
+//       position: absolute;
+//       right: 20px;
+//       color: white;
+//     }
+//   }
+// }
+
+//   input {
+//     margin: 0 20px;
+//     background-color: #fff;
+//   }
+// }
