@@ -20,7 +20,7 @@ p {
 }
 
 #app {
-  background-color: #555;
+  background-color: #000;
   margin-top: 132px;
 }
 
@@ -51,12 +51,13 @@ p {
 }
 .navHolder .nav-logo {
   margin-left: 20px;
-  width: 130px;
+  width: 150px;
   height: 100px;
-  background-image: url(../images/logo.png);
+  background-image: url(../images/liftingcast-logo.png);
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
+  margin-bottom: 20px;
 }
 .navHolder .nav-links {
   margin: auto 50px auto auto;
@@ -140,6 +141,8 @@ p {
 .home .events-container {
   margin: 0 auto;
   width: 700px;
+  display: flex;
+  flex-direction: column;
 }
 .home .events-container li {
   color: white;
@@ -155,6 +158,9 @@ p {
 .home .events-container li p {
   margin: auto 0 auto 15px;
 }
+.home .events-container li span {
+  margin: auto 0 auto 15px;
+}
 .home .events-container .addItemInput {
   width: 700px;
   margin-top: 5px;
@@ -164,19 +170,39 @@ p {
 }
 .home .events-container .addItemInput input {
   width: 100%;
-  background-color: none;
+  background-color: #000;
+  color: white;
 }
 .home .events-container .addItemInput button {
   width: 150px;
   font-family: Roboto;
+  background-color: #fff;
+  color: #000;
+}
+.home .events-container .competitor-styling {
+  margin-left: 15px;
 }
 .home .events-container .right {
   position: absolute;
   right: 15px;
   margin-top: 5px;
 }
+.home .events-container .delete {
+  position: absolute;
+  right: 15px;
+  margin-top: 5px;
+  cursor: pointer;
+}
 .home .events-container li:nth-child(even) {
   background-color: #444;
+}
+.home .events-container .back-button {
+  width: 150px;
+  height: 30px;
+  font-family: Roboto;
+  background-color: #fff;
+  color: #000;
+  margin: 20px auto;
 }
 
 li.strike {

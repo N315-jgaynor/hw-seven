@@ -59,52 +59,52 @@ var LISTS = [
     name: "2022 Bench Blast",
     listItems: [
       {
-        name: "Simo Kozieł",
+        name: "Brianna Ryer",
         checked: false,
         category: "",
       },
       {
-        name: "Vitaly Piątek",
+        name: "Pála Wawrzaszek",
         checked: false,
         category: "",
       },
       {
-        name: "Sampath Valerio",
+        name: "Prisca Fèvre",
         checked: false,
         category: "",
       },
       {
-        name: "Pramod Rudaski",
+        name: "Signe Longstaff",
         checked: false,
         category: "",
       },
       {
-        name: "Arya Coello",
+        name: "Xeno Möller",
         checked: false,
         category: "",
       },
       {
-        name: "Kiran Ó Seighin",
+        name: "Doris Georgiev",
         checked: false,
         category: "",
       },
       {
-        name: "Gabriel Serra",
+        name: "Rebekka Barclay",
         checked: false,
         category: "",
       },
       {
-        name: "Torin Schüttmann",
+        name: "Lea Salamanca",
         checked: false,
         category: "",
       },
       {
-        name: "Jay Patterson",
+        name: "Rhebekka Donalds",
         checked: false,
         category: "",
       },
       {
-        name: "Nat Salminen",
+        name: "Jacobine Baardsen",
         checked: false,
         category: "",
       },
@@ -587,7 +587,7 @@ function deleteItem(listIndex, idx) {
 }
 
 function loadListItems(listIndex) {
-  let listString = `<div class="events-container"><h1></h1>`;
+  let listString = `<div class="events-container"><h1>${LISTS[listIndex].name} Competitors</h1>`;
   $.each(LISTS[listIndex].listItems, function (idx, listItem) {
     listString += `<li id="${idx}" class="${
       listItem.checked ? "strike" : ""
@@ -605,7 +605,7 @@ function loadListItems(listIndex) {
     <input id="addItem" type="text">
     <button onclick="addItem(${listIndex})">Add Competitor</button>
     </div>
-    <button onclick="reloadLists()">Back</button>
+    <button class="back-button" onclick="reloadLists()">Back</button>
     </div>`;
   $(".home-content").html(listString);
 }
@@ -626,6 +626,30 @@ function loadLists() {
   $(".home-content").html(listString);
 }
 
+function changeRoute() {
+  let hashTag = window.location.hash;
+  let pageID = hashTag.replace("#", "");
+
+  if (pageID != "") {
+    $.get(`pages/${pageID}/${pageID}.html`, function (data) {
+      $("#app").html(data);
+
+      loadLists();
+    });
+  } else {
+    $.get(`pages/home/home.html`, function (data) {
+      $("#app").html(data);
+
+      loadLists();
+    });
+  }
+}
+
+function initURLListener() {
+  $(window).on("hashchange", changeRoute);
+  changeRoute();
+}
+
 $(document).ready(function () {
-  loadLists();
+  initURLListener();
 });

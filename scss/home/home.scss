@@ -10,6 +10,8 @@
   .events-container {
     margin: 0 auto;
     width: 700px;
+    display: flex;
+    flex-direction: column;
 
     li {
       color: white;
@@ -25,6 +27,10 @@
       p {
         margin: auto 0 auto 15px;
       }
+
+      span {
+        margin: auto 0 auto 15px;
+      }
     }
 
     .addItemInput {
@@ -36,13 +42,20 @@
 
       input {
         width: 100%;
-        background-color: none;
+        background-color: #000;
+        color: white;
       }
 
       button {
         width: 150px;
         font-family: Roboto;
+        background-color: #fff;
+        color: #000;
       }
+    }
+
+    .competitor-styling {
+      margin-left: 15px;
     }
 
     .right {
@@ -51,8 +64,24 @@
       margin-top: 5px;
     }
 
+    .delete {
+      position: absolute;
+      right: 15px;
+      margin-top: 5px;
+      cursor: pointer;
+    }
+
     li:nth-child(even) {
       background-color: #444;
+    }
+
+    .back-button {
+      width: 150px;
+      height: 30px;
+      font-family: Roboto;
+      background-color: #fff;
+      color: #000;
+      margin: 20px auto;
     }
   }
 }
@@ -60,50 +89,3 @@
 li.strike {
   text-decoration: line-through;
 }
-
-// .home {
-//   h1 {
-//     color: white;
-//   }
-
-//   .events-container {
-//     li {
-//       background-color: blue;
-//       color: white;
-//       // cursor: pointer;
-//       // list-style-type: none;
-//       // height: 50px;
-//       // display: flex;
-//       // align-items: center;
-//       // padding-left: 20px;
-//       // background-color: bisque;
-//       // position: relative;
-//       // width: 500px;
-//       // margin-top: 100px;
-//       // color: white;
-
-//       input {
-//         margin: 0 20px;
-//         background-color: #fff;
-//       }
-//     }
-
-//     .right {
-//       position: absolute;
-//       right: 15px;
-//     }
-
-//     .delete {
-//       cursor: pointer;
-//       position: absolute;
-//       right: 20px;
-//       color: white;
-//     }
-//   }
-// }
-
-//   input {
-//     margin: 0 20px;
-//     background-color: #fff;
-//   }
-// }
